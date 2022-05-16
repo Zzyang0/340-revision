@@ -204,7 +204,7 @@ header{
   }
 }
 /* this is the generator_page css */ 
-.Container .generator {
+.container .generator {
   background-color: #C3A6A0;
   border-radius: 20px;
   padding: 0 10px;
@@ -230,7 +230,7 @@ header{
   margin-top: 10px;
 }
 
-.Generator {
+.generator {
   border-radius: 30px;
   text-align: center;
   margin: 10px 30px 10px 10px;

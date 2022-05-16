@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -35,73 +35,79 @@
     <header class="subpage-title"><h1>GENERATING OUTFIT</h1></header>
     <div class='Container'>
       <div class='generator'>
-        <!--div class="question"-->
-        <label for="q1">HOW IS THE WEATHER TODAY?</label>
-        <div id='choice'>
-          <button class='button' type="button">SUNNY</button>
-          <button class='button' type="button">WARM</button>
-        </div>
-      <!--/div-->
-
-      <!--div class="question"-->
-        <label for="q1">WHAT ARE YOU DOING TODAY?</label>
-        <div id='choice'>
-          <button class='button' type="button">DATE</button>
-          <button class='button' type="button">CASUAL</button>
-        </div>
-      <!--/div-->
-
-      <!--div class="question"-->
-        <label for="q3">WHAT ARE YOU DOING TODAY?</label>
-        <div id='choice'>
-          <button class='button' type="button">MOVIE</button>
-          <button class='button' type="button">PICNIC</button>
-          <button class='button' type="button">BIKING</button>
-        </div>
-      <!--/div-->
-
-      <!--div class="question"-->
-        <label for="q4">YOU ARE GOING TO BE:</label>
-        <div id='choice'>
-          <button class='button' type="button">INDOOR</button>
-          <button class='button' type="button">OUTDOOR</button>
-        </div>
-      <!--/div-->
-
-      <!--div class="question"-->
-        <div id='choice'>
-          <label for="budget">BUDGET:$</label>
-          <input type="BUDGET" id="BUDGET_input" name="BUDGET"></input>
-        </div>
-      <!--/div-->
-
-      <!--div class="question"-->
-        <button class="Generator" type="button">
-            GENERATE
-        </button>
-        <!--/div-->
+        <form>
+          <label for="q1">HOW IS THE WEATHER TODAY?</label>
+          <div id='choice'>
+              <select>
+                  <option value="Sunny">Sunny</option>
+                  <option value="Windy">Windy</option>
+                  <option value="Rainy">Rainy</option>
+                  <option value="Humid">Humid</option>
+                  <option value="Frigid">Frigid</option>
+              </select>
+          </div>
+      
+          <label for="q2">YOU ARE GOING TO BE:</label>
+          <div>
+              <select>
+                  <option value="Indoor">Indoor</option>
+                  <option value="Outdoor">Outdoor</option>
+              </select>
+          </div>
+      
+          <label for="q3">WHAT OCCASION ARE YOU GOING TO?</label>
+          <div>
+              <select>
+                  <option value="DATE">Date</option>
+                  <option value="CAUSAL">Causal</option>
+                  <option value="Weeding">Weeding</option>
+                  <option value="Business Meeting">Business</option>
+              </select>
+          </div>
+      
+          <label for="q4">WHAT ARE YOU DOING TODAY?</label>
+          <div>
+              <select>
+                  <option value="Movie">Movie</option>
+                  <option value="Picnic">Picnic</option>
+                  <option value="Work">Work</option>
+                  <option value="Biking">Biking</option>
+              </select>
+          </div>
+      
+          <div id='choice'>
+              <label for="budget" id="BUDGET_input">BUDGET:$</label>
+              <input type="BUDGET" id="BUDGET_input" name="BUDGET"></input>
+          </div>
+      
+          <div class="output">
+              <button class="Generator" type="button">
+                  GENERATE
+              </button>
+          </div> 
+      </form>
       </div>
 
 
       <div class="generated-cloth">
         <div class="cloth">
-          <img src="img/shirt.png">
-          <h4>ESSENTIALS</h4>
-          <h6>Black Relaxed Crewneck Sweatshirt</h6>
+          <img src="img/shirt.png" alt="image of the shirt">
+          <h1>ESSENTIALS</h4>
+          <h2>Black Relaxed Crewneck Sweatshirt</h6>
           <p>$80</p>
           <button class="saved-to-closet" type="button"> SAVED TO CLOSET </button>
         </div>
         <div class="cloth">
-          <img src="img/pant.png">
-          <h4>RAG & BONE</h4>
-          <h6>Blue Fit 2 Jeans</h6>
+          <img src="img/pant.png" alt="image of the pants">
+          <h1>RAG & BONE</h4>
+          <h2>Blue Fit 2 Jeans</h6>
           <p>$195</p>
           <button class="save-to-closet" type="button"> SAVE TO CLOSET </button>
         </div>
         <div class="cloth">
-          <img src="img/shoes.png">
-          <h4>AXEL ARIGATO</h4>
-          <h6>White & Grey Clean 90 Sneakers</h6>
+          <img src="img/shoes.png" alt="image of the shoes">
+          <h1>AXEL ARIGATO</h4>
+          <h2>White & Grey Clean 90 Sneakers</h6>
           <p>$225</p>
           <button class="save-to-closet" type="button"> SAVE TO CLOSET </button>
         </div>
