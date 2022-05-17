@@ -1,24 +1,31 @@
 /* set the page's box-size */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #F7F1F0;
-    background-image: url('../img/bg1.png');
+body {
+  background-color: #F7F1F0;
+  background-image: url('../img/bg1.png');
 }
 
+.cloth h1 {
+  font-size: 90%;
+}
 
-nav li:hover{
-    border-bottom: 0.5rem solid #7f1d33;
-    transition: ease-out .25s;
+.cloth h2 {
+  font-size: 15px;
+}
+
+nav li:hover {
+  border-bottom: 0.5rem solid #7f1d33;
+  transition: ease-out .25s;
 }
 
 #menu {
-  display:none;
+  display: none;
 }
 
-footer{
+footer {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -26,7 +33,7 @@ footer{
   margin-top: 150px;
 }
 
-header{
+header {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -34,7 +41,7 @@ header{
   align-items: center;
 }
 
-#buttom_home{
+#buttom_home {
   border-radius: 20px;
   background: #fefcfc;
   padding: 30px;
@@ -43,171 +50,23 @@ header{
   margin-left: 70px;
   font-weight: bold;
   font-size: 1.8rem;
-} 
+}
 
-.container-fluid .navbar{
+.container-fluid .navbar {
   max-width: 992px;
 }
 
-@media (min-width:598px) {
-  body {
-    background-image: none;
-  }
 
-  #home, #generator, #new, #about {
-    display:none;
-  }
-
-  #menu {
-    display:flex;
-    height:240px;
-    width:200px;
-  }
-
-  #logo {
-    width: 320px;
-    padding-bottom:0.5rem;
-    margin-left:50px;
-    display:flex;
-    height:200px;
-  }
-
-  #account {
-    display:flex;
-    height:200px;
-    width:180px;
-  }
-
-  #menu:hover {
-    border-bottom: 0.5rem solid #7f1d33;
-    transition: ease-out .25s;
-  }
-
-  main div img{
-    width: 720px;
-    height: 620px;
-    margin-right: 35px;
-    margin-top:8px;
-    display: block;
-    border-radius: 20px;
-  }
-
-  .container-text { 
-    font-size: 4rem;
-    margin-top:40px;
-    margin-bottom: 50px;
-    height:auto;
-    margin-left:16rem;
-  }
-  
-  #buttom_home{
-    border-radius: 20px;
-    background: #fefcfc;
-    padding: 30px;
-    width: 200px;
-    height: 400px;
-    margin-bottom: 20px;
-    margin-left: 70px;
-    font-weight: bold;
-    font-size: 1.8rem;
-  }  
-
-  #buttom-home, .container-text{
-  margin-bottom:60px;
-  }
-
-  .Container {
-    margin: 5% 20% 10px 10px;
-  }
-
-  .subpage-title{
-    width: 500px;
-  }
-
-  .Container .generator {
-    margin-left: 90px;
-    margin-bottom: 90px;
-  }
+/* this is the generator_page css */
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (min-width:992px) {
-  #account {
-    width:95px;
-    height:80px;
-  }
-  
-  #menu {
-    display:none;
-  }
-
-  #logo {
-      width: 250px;
-      padding-bottom: 1.5rem;
-    }
-  
-  #home, #generator, #new, #about {
-    display:block;
-  }
-  
-    nav ul li{
-      text-align: center;
-      padding-top: 0.2rem;
-      margin:6px;
-      font-size:1.2rem;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    #buttom_home{
-      margin-left: -120px;
-    } 
-
-    main div img{
-      width: 750px;
-      height: 580px;
-      padding-top: 2rem;
-      margin-left: 50%;
-      display: block;  
-  }
-
-    main div p:last-child{
-      font-weight: bold;
-  }
-  
-  .container-text {
-    font-size: 3.5rem;
-    margin-top:-550px;
-    height:auto;
-    margin-left:50px;
-  }
-
-  footer {
-    margin-top: 350px;
-  }
-  
-  .Container {
-    display: flex;
-    flex-grow: 1;
-    margin: 5% 20% 10px 10px;
-  }
-
-  .Container .generator {
-    flex-basis: 40%;
-  }
-
-  .Container .generated-cloth {
-    flex-basis: 60%;
-    display: flex;
-  }
-
-  .cloth {
-    flex-grow: 1;
-  }
-}
-/* this is the generator_page css */ 
-.container .generator {
+.Container .generator {
   background-color: #C3A6A0;
   border-radius: 20px;
-  padding: 0 10px;
   height: 450px;
 }
 
@@ -217,7 +76,7 @@ header{
   margin-bottom: 10px;
 }
 
-#choice .button, #BUDGET_input{
+#choice .button, #BUDGET_input {
   display: inline;
   font-family: 'Poppins', sans-serif;
   border-radius: 30px;
@@ -232,19 +91,22 @@ header{
 
 .generator {
   border-radius: 30px;
-  text-align: center;
   margin: 10px 30px 10px 10px;
   padding: 20px 20px;
   border-color: black;
 }
 
-.button:focus {
-  background-color: #C3A6A0;
+.output .Generator {
+  background-color: #F7F1F0;
+  line-height: 2.5;
+  font-size: 1rem;
+  border-radius: 10px;
 }
 
-nav a:hover{
-    border-bottom: 0.5rem solid #7f1d33;
-    transition: ease-out .25s;
+
+nav a:hover {
+  border-bottom: 0.5rem solid #7f1d33;
+  transition: ease-out .25s;
 }
 
 .Container .generated-cloth {
@@ -260,8 +122,7 @@ nav a:hover{
 }
 
 .cloth {
-  margin: auto;
-  text-align: center;
+  flex-grow: 1;
 }
 
 .cloth img {
@@ -287,16 +148,184 @@ nav a:hover{
   margin-bottom: 60px;
 }
 
-.saved-to-closet {
-  width: 170px;
-  height: 50px;
-  left: 841px;
-  top: 739px;
+.save-to-closet:hover {
+  background-color: #787878;
+}
 
-  background: #9da6af;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 7px 20px rgba(121, 188, 207, 0.4);
-  border-radius: 50px;
-  margin-bottom: 60px;
+.output .Generator:hover {
+  background-color: #787878;
+}
+
+@media (min-width:598px) {
+  body {
+    background-image: none;
+  }
+
+  #home,#generator,#new,#about {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    height: 240px;
+    width: 200px;
+  }
+
+  #logo {
+    width: 320px;
+    padding-bottom: 0.5rem;
+    margin-left: 50px;
+    display: flex;
+    height: 200px;
+  }
+
+  #account {
+    display: flex;
+    height: 200px;
+    width: 180px;
+  }
+
+  #menu:hover {
+    border-bottom: 0.5rem solid #7f1d33;
+    transition: ease-out .25s;
+  }
+  .container-text {
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    height: auto;
+    margin-left: 16rem;
+  }
+
+  #buttom_home {
+    border-radius: 20px;
+    background: #fefcfc;
+    padding: 30px;
+    width: 200px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  #buttom-home,
+  .container-text {
+    margin-bottom: 60px;
+  }
+
+  .Container {
+    flex-wrap: nowrap;
+  }
+
+  .Container .generated-cloth {
+    display: flex;
+  }
+
+  .subpage-title {
+    width: 500px;
+  }
+
+  .Container .generator {
+    margin-left: 90px;
+    margin-bottom: 90px;
+  }
+
+  .cloth img {
+    height: 40%;
+  }
+
+  .cloth p {
+    margin-bottom: 10px;
+  }
+
+  .cloth .second {
+    margin-top: 26px;
+  }
+
+
+}
+
+@media (min-width:992px) {
+  #account {
+    width: 95px;
+    height: 80px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #logo {
+    width: 250px;
+    padding-bottom: 1.5rem;
+  }
+
+  #home,
+  #generator,
+  #new,
+  #about {
+    display: block;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding-top: 0.2rem;
+    margin: 6px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #buttom_home {
+    margin-left: -120px;
+  }
+
+  main div img {
+    width: 750px;
+    height: 580px;
+    margin-left: 50%;
+    display: block;
+  }
+
+  main div p:last-child {
+    font-weight: bold;
+  }
+
+  .container-text {
+    font-size: 3.5rem;
+    margin-top: -550px;
+    height: auto;
+    margin-left: 50px;
+  }
+
+  footer {
+    margin-top: 350px;
+  }
+
+  .Container {
+    display: flex;
+    flex-grow: 1;
+    margin: 5% 20% 10px 10px;
+  }
+
+  .Container .generated-cloth {
+    flex-basis: 60%;
+    display: flex;
+  }
+
+  .cloth {
+    flex-grow: 1;
+  }
+
+  .cloth .second {
+    margin-top: 25px;
+  }
+
+}
+
+@media (min-width:1440px) {
+  .cloth .second {
+    margin-top: 10px;
+  }
+  
 }
