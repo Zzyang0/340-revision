@@ -116,6 +116,10 @@ body {
   .cloth h2 {
     font-size: 15px;
   }
+/* new generator */
+
+
+
   .Container {
     display: flex;
     flex-wrap: wrap;
@@ -159,15 +163,8 @@ body {
     line-height: 2.5;
     font-size: 1rem;
     border-radius: 10px;
-    margin-top:20px;
-    margin-left:15px;
   }
   
-  
-  nav a:hover {
-    border-bottom: 0.5rem solid #7f1d33;
-    transition: ease-out .25s;
-  }
   
   .Container .generated-cloth {
     margin-left: 50px;
@@ -199,8 +196,7 @@ body {
     height: 50px;
     left: 841px;
     top: 739px;
-
-    margin:4px;
+  
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -216,70 +212,11 @@ body {
   .output .Generator:hover {
     background-color: #787878;
   }
-  
- 
 
-
-  @media (min-width:498px) {
-
-  }
 
   @media (min-width:598px) {
     body {
       background-image: none;
-    }
-  
-    #home,#generator,#new,#about {
-      display: none;
-    }
-  
-    #menu {
-      display: flex;
-      height: 240px;
-      width: 200px;
-    }
-  
-    #logo {
-      width: 320px;
-      padding-bottom: 0.5rem;
-      margin-left: 50px;
-      display: flex;
-      height: 200px;
-    }
-  
-    #account {
-      display: flex;
-      height: 200px;
-      width: 180px;
-    }
-  
-    #menu:hover {
-      border-bottom: 0.5rem solid #7f1d33;
-      transition: ease-out .25s;
-    }
-    .container-text {
-      font-size: 4rem;
-      margin-top: 40px;
-      margin-bottom: 50px;
-      height: auto;
-      margin-left: 16rem;
-    }
-  
-    #buttom_home {
-      border-radius: 20px;
-      background: #fefcfc;
-      padding: 30px;
-      width: 200px;
-      height: 400px;
-      margin-bottom: 20px;
-      margin-left: 70px;
-      font-weight: bold;
-      font-size: 1.8rem;
-    }
-  
-    #buttom-home,
-    .container-text {
-      margin-bottom: 60px;
     }
   
     .Container {
@@ -313,40 +250,33 @@ body {
   
   
   }
-  
+
+  /* @media (min-width:992px) { 
+    .footer1 > * { 
+    flex: 1; 
+    } 
+   
+     .footer1 { 
+    flex: 2 0px; 
+    } 
+   
+     .contact { 
+    flex: 1 0px; 
+    } 
+  } 
+   */
   @media (min-width:992px) {
-    #account {
-      width: 95px;
-      height: 80px;
-    }
-  
-    #menu {
-      display: none;
-    }
-  
-    #logo {
-      width: 250px;
-      padding-bottom: 1.5rem;
-    }
-  
-    #home,
-    #generator,
-    #new,
-    #about {
-      display: block;
-    }
-  
-    nav ul li {
-      text-align: center;
-      padding-top: 0.2rem;
-      margin: 6px;
-      font-size: 1.2rem;
-      font-family: 'Montserrat', sans-serif;
-    }
-  
-    #buttom_home {
-      margin-left: -120px;
-    }
+    .footer1 > * { 
+      flex: 1; 
+      } 
+     
+       .footer1 { 
+      flex: 2 0px; 
+      } 
+     
+       .contact { 
+      flex: 1 0px; 
+      } 
   
     main div img {
       width: 750px;
@@ -361,9 +291,9 @@ body {
   
     .container-text {
       font-size: 3.5rem;
-      margin-top: -550px;
+      margin-top: 50px;
       height: auto;
-      margin-left: 50px;
+      margin-left: 100px;
     }
   
     footer {
@@ -389,33 +319,16 @@ body {
       margin-top: 25px;
     }
 
-    .footer1 > * {
-      flex: 1;
-    }
-    
-    .footer1 {
-      flex: 2 0px;
-    }
-
-    .contact {
-        flex: 1 0px;
-      }
-    
-  
-  }
-
-  @media (min-width:1000px) {
-    .output .Generator {
-      margin-top:30px;
-      margin-left:20px;
+    #buttom-home{
+      margin:20px;
     }
   }
-  
+
   @media (min-width:1440px) {
+
+
     .cloth .second {
       margin-top: 10px;
     }
     
   }
-
-
