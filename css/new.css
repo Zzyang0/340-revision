@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: sans-serif;
     display: grid;
     grid-template-rows:auto;
@@ -24,6 +24,7 @@ body {
     width: 105%;
     height: 105%;
     border-radius: 10px;
+    margin: 50px;
   }
 
   #buttom_home{
@@ -41,36 +42,46 @@ body {
     color:#000000;
     background-color:#ddcfcc;
     }
-    
-.sec2_text{
-    align-items: center;
-    display: flex;
-    text-align: center;
-    font-size: large;
-    font-weight: 100;
-    padding-top: 2em;
-}
 
-.sec2_pic{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    font-size: large;
-    font-weight: 100;
-    padding-top: 2em;
-}
 
-.sec2_pic img{
-    display: block;
-    width: 65%;
-    height: 75%;
-    border-radius: 10px;
-}
+  .sec2_text{
+      align-items: center;
+      display: flex;
+      text-align: center;
+      font-size: large;
+      font-weight: 100;
+      padding-top: 2em;
+  }
+
+  .sec2_pic {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      font-size: large;
+      font-weight: 100;
+      padding-top: 2em;
+  }
+
+  .sec2_pic img {
+      display: flex;
+      width: 65%;
+      height: 75%;
+      border-radius: 10px;
+      margin-left: auto;
+
+  }
+
+  .sec2_pic p {
+    font-size:95%;
+  }
+
+
   .footer {
     display: flex;
     flex-flow: row wrap;
     padding: 40px 40px 40px 40px;
     background-color: #ddcfcc;
+    width:100%;
   }
   
   .footer1 > * {
@@ -215,10 +226,6 @@ body {
 
 
   @media (min-width:598px) {
-    body {
-      background-image: none;
-    }
-  
     .Container {
       flex-wrap: nowrap;
     }
@@ -251,21 +258,8 @@ body {
   
   }
 
-  /* @media (min-width:992px) { 
-    .footer1 > * { 
-    flex: 1; 
-    } 
-   
-     .footer1 { 
-    flex: 2 0px; 
-    } 
-   
-     .contact { 
-    flex: 1 0px; 
-    } 
-  } 
-   */
   @media (min-width:992px) {
+
     .footer1 > * { 
       flex: 1; 
       } 
@@ -289,7 +283,7 @@ body {
       font-weight: bold;
     }
   
-    .container-text {
+    .container-texts {
       font-size: 3.5rem;
       margin-top: 50px;
       height: auto;
