@@ -8,6 +8,85 @@
     background-color: #f7f1f0;
   }
 
+  .navbar {
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar header .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: #7f1d33;
+    margin-right: 1rem;
+    padding-top: 10px;
+  }
+  
+  .navbar .login {
+    float: right;
+  }
+  
+  .nav-dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .nav-dropdown .dropbutton {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 20px 30px;
+    font-size: 1.8rem;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+  }
+  
+  nav a:hover {
+    border-bottom: 0.25rem solid #7f1d33;
+    transition: ease-out .25s;
+    margin: -0.25rem;
+  }
+  .navbar header a:hover {
+    color: #C3A6A0;
+  }
+  
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .nav-dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+  }
+
   .sec1{
     padding-top: 1.5em;
     display: flex;
