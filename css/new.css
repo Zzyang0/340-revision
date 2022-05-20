@@ -100,8 +100,8 @@
 
   .sec1 .container-pic img{
     display: block;
-    width: 105%;
-    height: 105%;
+    width: 95%;
+    height: 95%;
     border-radius: 10px;
     margin: 50px;
   }
@@ -229,7 +229,7 @@
   .generator label {
     display: inline-block;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   
   #choice .button, #BUDGET_input {
@@ -240,7 +240,12 @@
     padding: 5px;
     border-color: black;
   }
-  
+
+  #choice {
+    margin:20px;
+    margin-left:0px;
+  }
+
   #choice:nth-last-of-type(1) {
     margin-top: 10px;
   }
@@ -257,6 +262,8 @@
     line-height: 2.5;
     font-size: 1rem;
     border-radius: 10px;
+    /* margin-left: 80px;
+    margin-top:5px; */
   }
   
   
@@ -307,7 +314,6 @@
     background-color: #787878;
   }
 
-  
 
  /* media query section */
 
@@ -380,7 +386,8 @@
     .cloth .second {
       margin-top: 26px;
     }
-  
+    
+
   
   }
 
