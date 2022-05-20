@@ -8,7 +8,7 @@ body, html {
     background-color: #f7f1f0;
   }
 
-  
+
 
   .sec1{
     padding-top: 1.5em;
@@ -44,6 +44,10 @@ body, html {
     color:#000000;
     background-color:#ddcfcc;
     }
+
+  .trend1, .trend2, .trend3, .container-texts {
+    display:none;
+  }
 
 
   .sec2_text{
@@ -226,6 +230,9 @@ body, html {
     background-color: #787878;
   }
 
+  
+
+ /* media query section */
 
   @media (min-width:598px) {
     .navbar {
@@ -313,6 +320,46 @@ body, html {
       display: block;
     }    
 
+
+
+    .trend1, .trend2, .trend3, .container-texts{
+      display:flex;
+    }
+
+    .sec2_text{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        font-size: large;
+        font-weight: 100;
+        padding-top: 2em;
+    }
+
+    .sec2_pic {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: large;
+        font-weight: 100;
+        padding-top: 2em;
+    }
+
+    .sec2_pic img {
+        display: flex;
+        width: 65%;
+        height: 75%;
+        border-radius: 10px;
+        margin-left: auto;
+
+    }
+
+    .sec2_pic p {
+      font-size:30px;
+      padding:auto;
+    }
+    .Container {
+      flex-wrap: nowrap;
+    }
     .Container {
       flex-wrap: nowrap;
     }
